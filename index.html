@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zome Chat</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+	<div class="container">
+	<div class="row no-gutters">
+	  <div class="col-md-4 mb-md-0 border-right">
+		<div class="settings-tray">
+		  <img class="profile-image" src="https://images.unsplash.com/photo-1508175911810-a4817cd3d7b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Profile img">
+		  <span class="settings-tray--right">
+			<i class="material-icons">cached</i>
+			<i class="material-icons">message</i>
+			<i class="material-icons">menu</i>
+		  </span>
+		</div>
+		<div class="search-box">
+		  <div class="input-wrapper">
+			<i class="material-icons">search</i>
+			<input placeholder="Search here" type="text">
+		  </div>
+		</div>
+		<div class="friend-drawer friend-drawer--onhover">
+		  <img class="profile-image" src="https://images.unsplash.com/photo-1532906619279-a4b7267faa66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Friend photo" alt="">
+		  <div class="text">
+			<h6>Mercedes</h6>
+			<p class="text-muted">Hey Number 2</p>
+		  </div>
+		  <span class="time text-muted small">17:21</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover">
+		  <img class="profile-image" src="https://images.unsplash.com/photo-1579015080750-bc87b507ae83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="">
+		  <div class="text">
+			<h6>Haas</h6>
+			<p class="text-muted" id='access'>May i borrow your engine please ??</p>
+		  </div>
+		  <span class="time text-muted small">00:32</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover ">
+		  <img class="profile-image" src="https://images.unsplash.com/photo-1503945839639-aea48daa250f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="">
+		  <div class="text">
+			<h6>Red Bull</h6>
+			<p class="text-muted">Get Away !! Let Max pass</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover">
+		  <img class="profile-image" src="https://images.unsplash.com/photo-1574785992306-2472ade8a7a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="">
+		  <div class="text">
+			<h6>Mc Laren</h6>
+			<p class="text-muted">Welcome to our club mate</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover">
+		  <img class="profile-image" src="https://images.unsplash.com/photo-1505739616034-1fbcb08941a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="">
+		  <div class="text">
+			<h6>Renault</h6>
+			<p class="text-muted">Hey !! Dan wants to drink from Seb's shoe</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+	  </div>
+
+	  <div class="col-md-8">
+		<div class="settings-tray">
+			<div class="friend-drawer no-gutters friend-drawer--grey">
+			<img class="profile-image" src="https://images.unsplash.com/photo-1532906619279-a4b7267faa66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Friend photo" alt="">
+			<div class="text">
+			  <h6>Mercedes</h6>
+			  <p class="text-muted">Our Silver Lining never dies</p>
+			</div>
+			<span class="settings-tray--right">
+			  <i class="material-icons">cached</i>
+			  <i class="material-icons">message</i>
+			  <i class="material-icons">menu</i>
+			</span>
+		  </div>
+		</div>
+
+		  <!-- <h1 id = "cool">sdbjhvdhbdjdsbl</h1><br> -->
+		  <div id="sender"></div>
+		  <div id="reciever"></div> 
+
+		  <!-- <div class = "new__message chat-bubble offset-md-9 chat-bubble chat-bubble--right">
+			<div class="msg" id ="disp"></div>
+		  </div> -->
+
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right" id="disp">
+				  hello
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				<div class="fake__msg">fake</div>
+			  </div>
+			</div>
+          </div>
+		  
+		  <!-- <div id ="temp"></div> -->
+		<div class="message__input">
+			<div class="row">
+				<div class="col-12">
+				  <div class="chat-box-tray">
+					<i class="material-icons">sentiment_very_satisfied</i>
+					<input id="textbox" type="text" placeholder="Type your message here...">
+					<i class="material-icons">mic</i>
+					<button onClick = "add_element()" id = "sendButton"><i class="material-icons" id = "send">send</i></button>
+				  </div>
+				</div>
+			  </div>
+		</div>	 
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+<script type="text/javascript" src="chat.js"></script>
+
+	
+</body>
+</html>
