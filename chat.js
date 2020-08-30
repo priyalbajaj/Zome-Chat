@@ -51,9 +51,10 @@ button.addEventListener("click",function(){
 
 
 function add_element(){
+
 	let info = faker.helpers.createCard();  
-    	let {name} = info;
-    	document.getElementById('fakemsg').innerHTML = name;
+    let {name} = info;
+    document.getElementById('fakemsg').innerHTML = name;
 
 data.push(document.getElementById('textbox').value);
 document.getElementById('textbox').value=''; 
