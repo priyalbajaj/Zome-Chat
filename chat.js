@@ -20,8 +20,6 @@ button.addEventListener("click", function(){
 });
 
 
-
-
 var sender = document.getElementById("sender").innerHTML= ` <div class="row no-gutters">
 			<div class="col-md-3 offset-md-9">
 			  <div class="chat-bubble chat-bubble--right" id="priyal">
@@ -79,3 +77,8 @@ document.getElementById("temp").innerHTML= `<div class="row no-gutters">
 		  document.getElementById('res').innerHTML=str;  	  
 }
 
+document.getElementById('fakemsg').innerHTML = 'hello'
+
+let info = faker.helpers.createCard();  
+    let {name} = info;
+    document.getElementById('fakemsg').innerHTML = name;

@@ -5,6 +5,22 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
+button{
+    border: none;
+  }
+input {
+    border: none;
+    border-radius: 30px;
+    width: 80%;
+  }
+  input::placeholder {
+    color: #e3e3e3;
+    font-weight: 300;
+    margin-left: 20px;
+  }
+  input:focus {
+    outline: none;
+  }
   
   .profile-image {
     width: 50px;
@@ -22,12 +38,6 @@ body {
   .settings-tray--right {
     float: right;
   }
-  .container {
-    margin: 60px auto;
-    background: #fff;
-    padding: 0;
-    border-radius: 7px;
-  }
   .settings-tray--right i {
     margin-top: 10px;
     font-size: 25px;
@@ -35,6 +45,13 @@ body {
     margin-left: 14px;
     transition: 0.3s;
   }
+  .container {
+    margin: 60px auto;
+    background: #fff;
+    padding: 0;
+    border-radius: 7px;
+  }
+  
   .settings-tray--right i:hover {
     color: #74b9ff;
     cursor: pointer;
@@ -52,19 +69,7 @@ body {
     margin-left: 7px;
     vertical-align: middle;
   }
-  input {
-    border: none;
-    border-radius: 30px;
-    width: 80%;
-  }
-  input::placeholder {
-    color: #e3e3e3;
-    font-weight: 300;
-    margin-left: 20px;
-  }
-  input:focus {
-    outline: none;
-  }
+  
   .friend-drawer {
     padding: 10px 15px;
     display: flex;
@@ -177,7 +182,4 @@ body {
 .new__message{
   text-align: end;
   /* display: none; */
-}
-button{
-  border: none;
 }
